@@ -1,10 +1,18 @@
 ﻿@page "/"
+@using Microsoft.AspNetCore.Components.WebView.Maui
 @using SpotifyRecommender.App
 @inject ApiCaller apiCaller
+
 <h1>Hello, world!</h1>
 
 Welcome to your new app.
-<button @onclick="Authorize">AUTHORIZE</button>
+@if (!isAuthorized)
+{
+<button class="btn-main btn" @onclick="Authorize">Authorize with Spotify</button>
+}
+else{
+    <p>Authorized</p>
+}
 
 @if(spotifyHtml != string.Empty)
 {
@@ -14,7 +22,7 @@ Welcome to your new app.
 }
 
 @code{
-
+    bool isAuthorized = false;
     string spotifyHtml = string.Empty;
     protected override void OnInitialized()
     {
@@ -22,8 +30,19 @@ Welcome to your new app.
     }
 
     private async void Authorize(){
-        spotifyHtml = await apiCaller.RequestAuthorization();
-        StateHasChanged();
+        Uri spotAuthUri = await apiCaller.RequestAuthorization();
+        BlazorWebView blazorWebView = new();
+
+        GoToAuth(spotAuthUri);
+
+    }
+    private void GoToAuth(Uri url)
+    {
+        App.Current.MainPage.Navigation.PushModalAsync(new AuthPage(apiCaller ,url));
+    }
+
+    private async Task OpenExternalBrowser(Uri url){
+        await Launcher.OpenAsync(url);
     }
 }
 

@@ -1,3 +1,10 @@
+G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\bin\Debug\net8.0-android\SpotifyRecommender.App.dll
+G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\bin\Debug\net8.0-android\SpotifyRecommender.App.pdb
+G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\bin\Debug\net8.0-android\SpotifyRecommender.App.apk
+G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\bin\Debug\net8.0-android\SpotifyRecommender.App.aab
+G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\bin\Debug\net8.0-android\SpotifyRecommender.App-Signed.aab
+G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\bin\Debug\net8.0-android\SpotifyRecommender.App-Signed.apk
+G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\bin\Debug\net8.0-android\SpotifyRecommender.App-Signed.apk.idsig
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-android\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-android\build.props
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-android\adb.props
@@ -65,13 +72,6 @@ G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-androi
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-android\SpotifyRecommender.App.AssemblyInfoInputs.cache
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-android\SpotifyRecommender.App.AssemblyInfo.cs
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-android\SpotifyRecommender.App.csproj.CoreCompileInputs.cache
-G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\bin\Debug\net8.0-android\SpotifyRecommender.App.dll
-G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\bin\Debug\net8.0-android\SpotifyRecommender.App.pdb
-G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\bin\Debug\net8.0-android\SpotifyRecommender.App.apk
-G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\bin\Debug\net8.0-android\SpotifyRecommender.App.aab
-G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\bin\Debug\net8.0-android\SpotifyRecommender.App-Signed.aab
-G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\bin\Debug\net8.0-android\SpotifyRecommender.App-Signed.apk
-G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\bin\Debug\net8.0-android\SpotifyRecommender.App-Signed.apk.idsig
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-android\SpotifyRecommender.App.dll
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-android\refint\SpotifyRecommender.App.dll
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-android\SpotifyRecommender.App.pdb

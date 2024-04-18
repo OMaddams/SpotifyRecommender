@@ -7,6 +7,7 @@ namespace SpotifyRecommender.App
     public class ApiCaller
     {
         string baseAddress = "https://accounts.spotify.com/";
+        string codeVerifier = string.Empty;
         HttpClient HttpClient { get; set; } = new HttpClient();
 
         //CLient id should be moved to options
@@ -37,10 +38,10 @@ namespace SpotifyRecommender.App
             return System.Convert.ToBase64String(hash);
         }
 
-        public async Task<string> RequestAuthorization()
+        public async Task<Uri> RequestAuthorization()
         {
 
-            string codeVerifier = generateRandomString(69);
+            codeVerifier = generateRandomString(69);
             byte[] hashed = EncryptCodeVerifier(codeVerifier);
             string codeChallenge = Base64Encode(hashed);
 
@@ -52,16 +53,35 @@ namespace SpotifyRecommender.App
                 ["scope"] = "user-read-private user-read-email",
                 ["code_challenge_method"] = "S256",
                 ["code_challenge"] = codeChallenge,
-                ["redirect_uri"] = "/home"
+                ["redirect_uri"] = "https://localhost:5000"
             };
 
-            var uri = QueryHelpers.AddQueryString(baseAddress, query);
-
+            string stringUri = QueryHelpers.AddQueryString("https://accounts.spotify.com/authorize?", query);
+            Uri uri = new Uri(stringUri);
             var response = await HttpClient.GetAsync(uri);
 
 
             var responseBody = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-            return responseBody;
+
+            return uri;
         }
+
+        public async Task RequestAccessToken(string code)
+        {
+            var values = new Dictionary<string, string>()
+            {
+                {"client_id", clientId },
+                {"grant_type", "authorization_code" },
+                {"code", code},
+                {"redirect_uri", "https://localhost:5000" },
+                {"code_verifier", codeVerifier }
+            };
+
+            var content = new FormUrlEncodedContent(values);
+
+            var response = await HttpClient.PostAsync("https://spotify.com/api/token", content);
+            var responseString = await response.Content.ReadAsStringAsync();
+        }
+
     }
 }

@@ -1,11 +1,11 @@
+G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\bin\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.deps.json
+G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\bin\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.dll
+G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\bin\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.pdb
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.csproj.AssemblyReference.cache
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.GeneratedMSBuildEditorConfig.editorconfig
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.AssemblyInfoInputs.cache
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.AssemblyInfo.cs
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.csproj.CoreCompileInputs.cache
-G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\bin\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.deps.json
-G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\bin\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.dll
-G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\bin\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.pdb
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.dll
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\refint\SpotifyRecommender.App.dll
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.pdb

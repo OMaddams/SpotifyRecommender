@@ -7,6 +7,8 @@
             InitializeComponent();
 
             MainPage = new MainPage();
+
+            Routing.RegisterRoute(nameof(AuthPage), typeof(AuthPage));
         }
     }
 }

@@ -6,5 +6,10 @@
         {
             InitializeComponent();
         }
+
+        public async void GoToAuth()
+        {
+            await Shell.Current.GoToAsync("AuthPage");
+        }
     }
 }

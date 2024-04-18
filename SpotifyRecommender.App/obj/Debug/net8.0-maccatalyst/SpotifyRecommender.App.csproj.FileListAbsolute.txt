@@ -1,3 +1,5 @@
+G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\bin\Debug\net8.0-maccatalyst\SpotifyRecommender.App.dll
+G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\bin\Debug\net8.0-maccatalyst\SpotifyRecommender.App.pdb
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-maccatalyst\actool\_PartialAppManifest.items
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-maccatalyst\actool\_BundleResourceWithLogicalName.items
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-maccatalyst\actool\_ProcessedImageAssetsPath.items
@@ -11,8 +13,6 @@ G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-maccat
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-maccatalyst\SpotifyRecommender.App.AssemblyInfoInputs.cache
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-maccatalyst\SpotifyRecommender.App.AssemblyInfo.cs
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-maccatalyst\SpotifyRecommender.App.csproj.CoreCompileInputs.cache
-G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\bin\Debug\net8.0-maccatalyst\SpotifyRecommender.App.dll
-G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\bin\Debug\net8.0-maccatalyst\SpotifyRecommender.App.pdb
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-maccatalyst\SpotifyRecommender.App.dll
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-maccatalyst\refint\SpotifyRecommender.App.dll
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-maccatalyst\SpotifyRecommender.App.pdb
