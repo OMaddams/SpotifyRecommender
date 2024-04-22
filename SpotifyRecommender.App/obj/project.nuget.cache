@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "K3/ITsco/M+6rxO049aTvoF5Jbcg5MqXHYuJ5hURhkyI2SEFwCmX2hIXKMYxOnugAWD1ojzolGSkKqUNpng4/Q==",
+  "dgSpecHash": "Pm5MDDAOSSgVpLwEUG12Z+L+I4ByiGsDkCHHKVvxt6i40+mNY4juKKytCLVzjsggSiLf+26rb81xGeG9GEfPEQ==",
   "success": true,
   "projectFilePath": "G:\\Projects\\SpotifyRecommender.UI\\SpotifyRecommender.App\\SpotifyRecommender.App.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,7 @@
     "C:\\Users\\Sidewinder\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.4\\microsoft.net.illink.tasks.8.0.4.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
     "C:\\Users\\Sidewinder\\.nuget\\packages\\microsoft.windowsappsdk\\1.3.230724000\\microsoft.windowsappsdk.1.3.230724000.nupkg.sha512",
+    "C:\\Users\\Sidewinder\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Sidewinder\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
     "C:\\Users\\Sidewinder\\.nuget\\packages\\system.net.http.winhttphandler\\8.0.0\\system.net.http.winhttphandler.8.0.0.nupkg.sha512",
     "C:\\Users\\Sidewinder\\.nuget\\packages\\xamarin.android.glide\\4.15.1.2\\xamarin.android.glide.4.15.1.2.nupkg.sha512",

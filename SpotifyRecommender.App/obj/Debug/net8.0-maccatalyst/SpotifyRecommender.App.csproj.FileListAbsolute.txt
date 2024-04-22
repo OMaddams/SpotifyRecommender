@@ -17,3 +17,4 @@ G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-maccat
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-maccatalyst\refint\SpotifyRecommender.App.dll
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-maccatalyst\SpotifyRecommender.App.pdb
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-maccatalyst\ref\SpotifyRecommender.App.dll
+G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-maccatalyst\SpotifyRecommender.App.sourcelink.json

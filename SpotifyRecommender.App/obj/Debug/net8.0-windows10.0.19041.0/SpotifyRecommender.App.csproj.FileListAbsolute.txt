@@ -10,3 +10,4 @@ G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-window
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\refint\SpotifyRecommender.App.dll
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.pdb
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\ref\SpotifyRecommender.App.dll
+G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.sourcelink.json

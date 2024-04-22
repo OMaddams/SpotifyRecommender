@@ -17,3 +17,4 @@ G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-ios\Sp
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-ios\refint\SpotifyRecommender.App.dll
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-ios\SpotifyRecommender.App.pdb
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-ios\ref\SpotifyRecommender.App.dll
+G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-ios\SpotifyRecommender.App.sourcelink.json

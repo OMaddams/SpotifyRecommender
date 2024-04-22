@@ -32,7 +32,7 @@ public partial class AuthPage : ContentPage
 
     private async void webViewA_Navigating(object sender, WebNavigatingEventArgs e)
     {
-        if (e.Url.Contains("localhost") || !e.Url.Contains("spotify"))
+        if (!e.Url.Contains("spotify"))
         {
             var code = HttpUtility.ParseQueryString(e.Url).Get(0);
             if (code != null)

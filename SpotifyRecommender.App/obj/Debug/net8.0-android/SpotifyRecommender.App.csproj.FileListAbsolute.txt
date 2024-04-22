@@ -84,3 +84,4 @@ G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-androi
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-android\stamp\_CleanIntermediateIfNeeded.stamp
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-android\stamp\_ConvertResourcesCases.stamp
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-android\SpotifyRecommender.App.sourcelink.json

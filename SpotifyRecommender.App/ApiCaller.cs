@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.WebUtilities;
+using Newtonsoft.Json;
+using SpotifyRecommender.App.Models;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -8,6 +10,7 @@ namespace SpotifyRecommender.App
     {
         string baseAddress = "https://accounts.spotify.com/";
         string codeVerifier = string.Empty;
+
         HttpClient HttpClient { get; set; } = new HttpClient();
 
         //CLient id should be moved to options
@@ -50,7 +53,7 @@ namespace SpotifyRecommender.App
             {
                 ["response_type"] = "code",
                 ["client_id"] = clientId,
-                ["scope"] = "user-read-private user-read-email",
+                ["scope"] = "user-read-private user-read-email user-top-read",
                 ["code_challenge_method"] = "S256",
                 ["code_challenge"] = codeChallenge,
                 ["redirect_uri"] = "https://localhost:5000"
@@ -76,11 +79,22 @@ namespace SpotifyRecommender.App
                 {"redirect_uri", "https://localhost:5000" },
                 {"code_verifier", codeVerifier }
             };
+            var postJson = JsonConvert.SerializeObject(values);
+            var payload = new StringContent(postJson, encoding: Encoding.UTF8, "application/x-www-form-urlencoded");
 
-            var content = new FormUrlEncodedContent(values);
 
-            var response = await HttpClient.PostAsync("https://spotify.com/api/token", content);
-            var responseString = await response.Content.ReadAsStringAsync();
+            //var content = new FormUrlEncodedContent(values);
+            //content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/x-www-form-urlencoded");
+            HttpResponseMessage response = await HttpClient.PostAsync("https://accounts.spotify.com/api/token", payload);
+            string json = await response.Content.ReadAsStringAsync();
+
+            if (json == null)
+            {
+                throw new JsonSerializationException();
+            }
+
+            var result = JsonConvert.DeserializeObject<AcessTokenModel>(json);
+
         }
 
     }

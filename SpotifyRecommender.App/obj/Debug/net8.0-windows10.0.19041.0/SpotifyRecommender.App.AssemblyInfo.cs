@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SpotifyRecommender.App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3758ae71a9f8baa71f08e8434f8941f8ced9e03e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+255dd81c41e137840e5d3ffa5ea45a591f432d26")]
 [assembly: System.Reflection.AssemblyProductAttribute("SpotifyRecommender.App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SpotifyRecommender.App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
