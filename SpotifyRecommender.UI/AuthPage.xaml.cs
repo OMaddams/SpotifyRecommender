@@ -18,9 +18,9 @@ public partial class AuthPage : ContentPage
     public static AuthPage Current { get; private set; }
 
     public Uri uri { get; private set; }
-    public async void GoBack()
+    public async Task GoBack()
     {
-        App.Current.MainPage.Navigation.PopModalAsync();
+        await Navigation.PopToRootAsync();
     }
 
     private void Button_Pressed(object sender, EventArgs e)
@@ -38,7 +38,7 @@ public partial class AuthPage : ContentPage
             if (code != null)
             {
                 await apicaller.RequestAccessToken(code);
-                GoBack();
+                await GoBack();
             }
         }
     }

@@ -11,6 +11,8 @@ namespace SpotifyRecommender.App
         string baseAddress = "https://accounts.spotify.com/";
         string codeVerifier = string.Empty;
         string codeChallenge = string.Empty;
+        AcessTokenModel? AcessTokenModel { get; set; } = null;
+        public bool isAuthorized = false;
         HttpClient HttpClient { get; set; } = new HttpClient();
 
         //CLient id should be moved to options
@@ -100,7 +102,27 @@ namespace SpotifyRecommender.App
             }
 
             var result = JsonConvert.DeserializeObject<AcessTokenModel>(json);
+            if (result != null)
+            {
+                AcessTokenModel = result;
+                isAuthorized = true;
 
+            }
+
+        }
+
+        public async Task GetUserTopTracks()
+        {
+            if (AcessTokenModel != null)
+            {
+                HttpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", AcessTokenModel.AccessToken);
+                var response = await HttpClient.GetAsync("https://api.spotify.com/v1/me/top/tracks");
+                var responseContent = await response.Content.ReadAsStringAsync();
+
+                var userTopTracks = JsonConvert.DeserializeObject<UserTopTracksModel>(responseContent);
+
+
+            }
         }
 
     }

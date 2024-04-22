@@ -12,7 +12,9 @@ Welcome to your new app.
 }
 else{
     <p>Authorized</p>
+    <button class="btn-main btn" @onclick="GetTopTracks">Get Top tracks</button>
 }
+
 
 @if(spotifyHtml != string.Empty)
 {
@@ -26,7 +28,7 @@ else{
     string spotifyHtml = string.Empty;
     protected override void OnInitialized()
     {
-
+        isAuthorized = apiCaller.isAuthorized;
     }
 
     private async void Authorize(){
@@ -36,9 +38,14 @@ else{
         GoToAuth(spotAuthUri);
 
     }
+    private async void GetTopTracks()
+    {
+        await apiCaller.GetUserTopTracks();
+    }
     private void GoToAuth(Uri url)
     {
-        App.Current.MainPage.Navigation.PushModalAsync(new AuthPage(apiCaller ,url));
+        
+        App.Current.MainPage.Navigation.PushAsync(new AuthPage(apiCaller ,url),true);
     }
 
     private async Task OpenExternalBrowser(Uri url){

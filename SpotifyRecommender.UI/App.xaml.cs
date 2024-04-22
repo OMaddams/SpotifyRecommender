@@ -6,9 +6,10 @@
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
 
-            Routing.RegisterRoute(nameof(AuthPage), typeof(AuthPage));
+
+
         }
     }
 }
