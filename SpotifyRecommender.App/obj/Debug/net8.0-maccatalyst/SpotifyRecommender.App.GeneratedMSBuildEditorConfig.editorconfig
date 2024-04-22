@@ -12,6 +12,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SpotifyRecommender.App
-build_property.ProjectDir = G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\
+build_property.ProjectDir = C:\Users\omadd\OneDrive\Desktop\desk\Own-stuff\SpotifyRecommender\SpotifyRecommender.App\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -4,6 +4,7 @@ namespace SpotifyRecommender.App.Models
 {
     internal class AcessTokenModel
     {
+
         [JsonProperty("access_token")]
         public string AccessToken { get; set; }
         [JsonProperty("token_type")]
@@ -14,5 +15,7 @@ namespace SpotifyRecommender.App.Models
         public int ExpiresIn { get; set; }
         [JsonProperty("refresh_token")]
         public string RefreshToken { get; set; }
+
+        public DateTime CreationTime { get; private set; } = DateTime.Now;
     }
 }

@@ -10,43 +10,49 @@ namespace SpotifyRecommender.App
     {
         string baseAddress = "https://accounts.spotify.com/";
         string codeVerifier = string.Empty;
-
+        string codeChallenge = string.Empty;
         HttpClient HttpClient { get; set; } = new HttpClient();
 
         //CLient id should be moved to options
         const string clientId = "355aad0c14324aedb79a54111bd18add";
 
 
-        //Generates a random string containing only the possible characters 
-        static private string generateRandomString(int length)
+        //Generates a random byte array
+        static private string GenerateRandomString()
         {
-            const string possibleCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-            string values = RandomNumberGenerator.GetString(possibleCharacters, length);
-            return values;
+            var rng = RandomNumberGenerator.Create();
+            var bytes = new byte[32];
+            rng.GetBytes(bytes);
+            return Base64Encode(bytes);
+
+
         }
 
         //Creates a new SHA256 and uses it to compute hash from the codeVerifier code
-        //Return a new hashed byte array
-        static private byte[] EncryptCodeVerifier(string codeVerifier)
+        //Return a new hashed byte array encoded to Base 64
+        static private string EncryptCodeVerifier(string codeVerifier)
         {
-            var crypt = SHA256.Create();
-            string hash = string.Empty;
-            byte[] crypto = crypt.ComputeHash(Encoding.ASCII.GetBytes(codeVerifier));
-            return crypto;
+            var codeChallenge = string.Empty;
+            using (var sha256 = SHA256.Create())
+            {
+                var challengeBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(codeVerifier));
+                codeChallenge = Base64Encode(challengeBytes);
+            }
+            return codeChallenge;
         }
 
-        //Converts the hashed byte array back to a Base64 String
-        static private string Base64Encode(byte[] hash)
+        //Converts the byte array back to a Base64 String
+        static private string Base64Encode(byte[] bytes)
         {
-            return System.Convert.ToBase64String(hash);
+            return Convert.ToBase64String(bytes).TrimEnd('=').Replace('+', '-').Replace("/", "-");
         }
 
         public async Task<Uri> RequestAuthorization()
         {
 
-            codeVerifier = generateRandomString(69);
-            byte[] hashed = EncryptCodeVerifier(codeVerifier);
-            string codeChallenge = Base64Encode(hashed);
+            codeVerifier = GenerateRandomString();
+            codeChallenge = EncryptCodeVerifier(codeVerifier);
+
 
 
             var query = new Dictionary<string, string>()
@@ -79,13 +85,13 @@ namespace SpotifyRecommender.App
                 {"redirect_uri", "https://localhost:5000" },
                 {"code_verifier", codeVerifier }
             };
-            var postJson = JsonConvert.SerializeObject(values);
-            var payload = new StringContent(postJson, encoding: Encoding.UTF8, "application/x-www-form-urlencoded");
+            //var postJson = JsonConvert.SerializeObject(values);
+            //var payload = new StringContent(postJson, encoding: Encoding.UTF8, "application/x-www-form-urlencoded");
 
 
-            //var content = new FormUrlEncodedContent(values);
-            //content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/x-www-form-urlencoded");
-            HttpResponseMessage response = await HttpClient.PostAsync("https://accounts.spotify.com/api/token", payload);
+            var content = new FormUrlEncodedContent(values);
+            content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/x-www-form-urlencoded");
+            HttpResponseMessage response = await HttpClient.PostAsync("https://accounts.spotify.com/api/token", content);
             string json = await response.Content.ReadAsStringAsync();
 
             if (json == null)

@@ -11,3 +11,16 @@ G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-window
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.pdb
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\ref\SpotifyRecommender.App.dll
 G:\Projects\SpotifyRecommender.UI\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.sourcelink.json
+C:\Users\omadd\OneDrive\Desktop\desk\Own-stuff\SpotifyRecommender\SpotifyRecommender.App\bin\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.deps.json
+C:\Users\omadd\OneDrive\Desktop\desk\Own-stuff\SpotifyRecommender\SpotifyRecommender.App\bin\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.dll
+C:\Users\omadd\OneDrive\Desktop\desk\Own-stuff\SpotifyRecommender\SpotifyRecommender.App\bin\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.pdb
+C:\Users\omadd\OneDrive\Desktop\desk\Own-stuff\SpotifyRecommender\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.csproj.AssemblyReference.cache
+C:\Users\omadd\OneDrive\Desktop\desk\Own-stuff\SpotifyRecommender\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omadd\OneDrive\Desktop\desk\Own-stuff\SpotifyRecommender\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.AssemblyInfoInputs.cache
+C:\Users\omadd\OneDrive\Desktop\desk\Own-stuff\SpotifyRecommender\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.AssemblyInfo.cs
+C:\Users\omadd\OneDrive\Desktop\desk\Own-stuff\SpotifyRecommender\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.csproj.CoreCompileInputs.cache
+C:\Users\omadd\OneDrive\Desktop\desk\Own-stuff\SpotifyRecommender\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.sourcelink.json
+C:\Users\omadd\OneDrive\Desktop\desk\Own-stuff\SpotifyRecommender\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.dll
+C:\Users\omadd\OneDrive\Desktop\desk\Own-stuff\SpotifyRecommender\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\refint\SpotifyRecommender.App.dll
+C:\Users\omadd\OneDrive\Desktop\desk\Own-stuff\SpotifyRecommender\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\SpotifyRecommender.App.pdb
+C:\Users\omadd\OneDrive\Desktop\desk\Own-stuff\SpotifyRecommender\SpotifyRecommender.App\obj\Debug\net8.0-windows10.0.19041.0\ref\SpotifyRecommender.App.dll
